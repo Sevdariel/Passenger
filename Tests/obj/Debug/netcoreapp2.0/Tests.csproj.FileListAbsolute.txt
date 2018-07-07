@@ -1,0 +1,9 @@
+C:\Users\Właściciel\source\repos\Passenger\Tests\bin\Debug\netcoreapp2.0\Tests.deps.json
+C:\Users\Właściciel\source\repos\Passenger\Tests\bin\Debug\netcoreapp2.0\Tests.dll
+C:\Users\Właściciel\source\repos\Passenger\Tests\bin\Debug\netcoreapp2.0\Tests.pdb
+C:\Users\Właściciel\source\repos\Passenger\Tests\obj\Debug\netcoreapp2.0\Tests.csprojResolveAssemblyReference.cache
+C:\Users\Właściciel\source\repos\Passenger\Tests\obj\Debug\netcoreapp2.0\Tests.csproj.CoreCompileInputs.cache
+C:\Users\Właściciel\source\repos\Passenger\Tests\obj\Debug\netcoreapp2.0\Tests.AssemblyInfoInputs.cache
+C:\Users\Właściciel\source\repos\Passenger\Tests\obj\Debug\netcoreapp2.0\Tests.AssemblyInfo.cs
+C:\Users\Właściciel\source\repos\Passenger\Tests\obj\Debug\netcoreapp2.0\Tests.dll
+C:\Users\Właściciel\source\repos\Passenger\Tests\obj\Debug\netcoreapp2.0\Tests.pdb

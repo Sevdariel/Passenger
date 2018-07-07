@@ -1,0 +1,9 @@
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\bin\Debug\netcoreapp2.0\Tests.EndToEnd.deps.json
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\bin\Debug\netcoreapp2.0\Tests.EndToEnd.dll
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\bin\Debug\netcoreapp2.0\Tests.EndToEnd.pdb
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\obj\Debug\netcoreapp2.0\Tests.EndToEnd.csprojResolveAssemblyReference.cache
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\obj\Debug\netcoreapp2.0\Tests.EndToEnd.csproj.CoreCompileInputs.cache
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\obj\Debug\netcoreapp2.0\Tests.EndToEnd.AssemblyInfoInputs.cache
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\obj\Debug\netcoreapp2.0\Tests.EndToEnd.AssemblyInfo.cs
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\obj\Debug\netcoreapp2.0\Tests.EndToEnd.dll
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\obj\Debug\netcoreapp2.0\Tests.EndToEnd.pdb

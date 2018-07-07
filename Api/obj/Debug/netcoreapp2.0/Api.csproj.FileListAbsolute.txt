@@ -1,0 +1,16 @@
+C:\Users\Właściciel\source\repos\Passenger\Api\obj\Debug\netcoreapp2.0\Api.csprojResolveAssemblyReference.cache
+C:\Users\Właściciel\source\repos\Passenger\Api\obj\Debug\netcoreapp2.0\Api.csproj.CoreCompileInputs.cache
+C:\Users\Właściciel\source\repos\Passenger\Api\obj\Debug\netcoreapp2.0\Api.AssemblyInfoInputs.cache
+C:\Users\Właściciel\source\repos\Passenger\Api\obj\Debug\netcoreapp2.0\Api.AssemblyInfo.cs
+C:\Users\Właściciel\source\repos\Passenger\Api\bin\Debug\netcoreapp2.0\Api.deps.json
+C:\Users\Właściciel\source\repos\Passenger\Api\bin\Debug\netcoreapp2.0\Api.runtimeconfig.json
+C:\Users\Właściciel\source\repos\Passenger\Api\bin\Debug\netcoreapp2.0\Api.runtimeconfig.dev.json
+C:\Users\Właściciel\source\repos\Passenger\Api\bin\Debug\netcoreapp2.0\Api.dll
+C:\Users\Właściciel\source\repos\Passenger\Api\bin\Debug\netcoreapp2.0\Api.pdb
+C:\Users\Właściciel\source\repos\Passenger\Api\bin\Debug\netcoreapp2.0\Core.dll
+C:\Users\Właściciel\source\repos\Passenger\Api\bin\Debug\netcoreapp2.0\Infrastructure.dll
+C:\Users\Właściciel\source\repos\Passenger\Api\bin\Debug\netcoreapp2.0\Infrastructure.pdb
+C:\Users\Właściciel\source\repos\Passenger\Api\bin\Debug\netcoreapp2.0\Core.pdb
+C:\Users\Właściciel\source\repos\Passenger\Api\obj\Debug\netcoreapp2.0\Api.csproj.CopyComplete
+C:\Users\Właściciel\source\repos\Passenger\Api\obj\Debug\netcoreapp2.0\Api.dll
+C:\Users\Właściciel\source\repos\Passenger\Api\obj\Debug\netcoreapp2.0\Api.pdb
