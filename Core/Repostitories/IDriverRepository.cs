@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using Core.Domain;
 
 namespace Core.Repostitories
 {
     public interface IDriverRepository
     {
-        Driver Get(Guid userId);
-        IEnumerable<Driver> GetAll();
-        void Add(Driver driver);
-        void Update(Driver driver);
-        void Remove(Guid userId);
+        Task<Driver> GetAsync(Guid userId);
+        Task<IEnumerable<Driver>> GetAllAsync();
+        Task AddAsync(Driver driver);
+        Task UpdateAsync(Driver driver);
+        Task RemoveAsync(Guid userId);
     }
 }

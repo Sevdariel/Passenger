@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using AutoMapper;
 using Core.Domain;
 using Core.Repostitories;
@@ -19,9 +20,9 @@ namespace Infrastructure.Services
             _mapper = mapper;
         }
 
-        public DriverDTO Get(Guid userId)
+        public async Task<DriverDTO> GetAsync(Guid userId)
         {
-            var driver = _driverRepository.Get(userId);
+            var driver = await _driverRepository.GetAsync(userId);
 
             return _mapper.Map<Driver, DriverDTO>(driver);
         }

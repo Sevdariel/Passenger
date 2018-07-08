@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using Core.Domain;
 
 namespace Core.Repostitories
 {
     public interface IPassengerRepository
     {
-        Passenger Get(Guid passengerId);
-        IEnumerable<Passenger> GetAll();
-        void Add(Passenger passenger);
-        void Remove(Guid passengerId);
-        void Update(Passenger passenger);
+        Task<Passenger> GetAsync(Guid passengerId);
+        Task<IEnumerable<Passenger>> GetAllAsync();
+        Task AddAsync(Passenger passenger);
+        Task RemoveAsync(Guid passengerId);
+        Task UpdateAsync(Passenger passenger);
     }
 }
