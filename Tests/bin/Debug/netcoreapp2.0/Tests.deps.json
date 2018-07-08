@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "3b629f1718d125bcc5ded0c54a0d8168ee6c8264"
+    "signature": "670d44f40e863c08b47d6be37c18a8923fc89efe"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,6 +9,8 @@
       "Tests/1.0.0": {
         "dependencies": {
           "AutoMapper": "7.0.1",
+          "Autofac": "4.8.1",
+          "Autofac.Extensions.DependencyInjection": "4.2.2",
           "Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.TestHost": "2.1.1",
           "Microsoft.NET.Test.Sdk": "15.7.2",
@@ -20,6 +22,29 @@
         },
         "runtime": {
           "Tests.dll": {}
+        }
+      },
+      "Autofac/4.8.1": {
+        "dependencies": {
+          "System.ComponentModel": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.dll": {
+            "assemblyVersion": "4.8.1.0",
+            "fileVersion": "4.8.1.0"
+          }
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/4.2.2": {
+        "dependencies": {
+          "Autofac": "4.8.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "4.2.2.0",
+            "fileVersion": "4.2.2.0"
+          }
         }
       },
       "AutoMapper/7.0.1": {
@@ -1423,7 +1448,9 @@
       },
       "Core/1.0.0": {
         "dependencies": {
-          "AutoMapper": "7.0.1"
+          "AutoMapper": "7.0.1",
+          "Autofac": "4.8.1",
+          "Autofac.Extensions.DependencyInjection": "4.2.2"
         },
         "runtime": {
           "Core.dll": {}
@@ -1432,6 +1459,8 @@
       "Infrastructure/1.0.0": {
         "dependencies": {
           "AutoMapper": "7.0.1",
+          "Autofac": "4.8.1",
+          "Autofac.Extensions.DependencyInjection": "4.2.2",
           "Core": "1.0.0",
           "Newtonsoft.Json": "11.0.2"
         },
@@ -1446,6 +1475,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Autofac/4.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aIT9rupCOdab5RMfxvWTBmOxGU77tLqmvSF4V89SzV6oQcJrtuKw/Xp55xy9EijSktbMka55SbroAPOyT+lziw==",
+      "path": "autofac/4.8.1",
+      "hashPath": "autofac.4.8.1.nupkg.sha512"
+    },
+    "Autofac.Extensions.DependencyInjection/4.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nkspkD4qRKCvM1WG6bFLAuEwvbajEhEe7U3Q6XISCBEG6ZamOy52JACXnx3VumZksjPTylavkUZRzBBY7T2R+w==",
+      "path": "autofac.extensions.dependencyinjection/4.2.2",
+      "hashPath": "autofac.extensions.dependencyinjection.4.2.2.nupkg.sha512"
     },
     "AutoMapper/7.0.1": {
       "type": "package",

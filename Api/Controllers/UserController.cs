@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Infrastructure.Commands;
 using Infrastructure.Commands.Users;
 using Infrastructure.DTO;
 using Infrastructure.Services;
@@ -13,10 +14,12 @@ namespace Api.Controllers
     public class UsersController : Controller
     {
         private readonly IUserService _userService;
+        private readonly ICommandDispatcher _commandDispatcher;
 
-        public UsersController(IUserService userService)
+        public UsersController(IUserService userService, ICommandDispatcher commandDispatcher)
         {
             _userService = userService;
+            _commandDispatcher = commandDispatcher;
         }
 
         [HttpGet("{email}")]
@@ -31,11 +34,11 @@ namespace Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] CreateUser request)
+        public async Task<IActionResult> Post([FromBody] CreateUser command)
         {
-            await _userService.RegisterAsync(request.Email, request.Username, request.Password);
+            await _commandDispatcher.DispatchAsync(command);
 
-            return Created($"users/{request.Email}", new object());
+            return Created($"users/{command.Email}", new object());
         }
     }
 }
