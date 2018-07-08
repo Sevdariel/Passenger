@@ -8,5 +8,14 @@ namespace Core.Domain
     {
         public Guid UserId { get; protected set; }
         public Node Address { get; protected set; }
+
+        protected Passenger()
+        {
+        }
+
+        public Passenger(Guid userId)
+        {
+            UserId = userId;
+        }
     }
 }

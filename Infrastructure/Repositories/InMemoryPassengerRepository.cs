@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading.Tasks;
 using Core.Domain;
 using Core.Repostitories;
 
@@ -12,25 +13,28 @@ namespace Infrastructure.Repositories
     {
         private static ISet<Passenger> _passengers = new HashSet<Passenger>();
 
-        public Passenger Get(Guid passengerId)
-            => _passengers.Single(x => x.UserId == passengerId);
+        public async Task<Passenger> GetAsync(Guid passengerId)
+            => await Task.FromResult(_passengers.Single(x => x.UserId == passengerId));
 
-        public IEnumerable<Passenger> GetAll()
-            => _passengers;
+        public async Task<IEnumerable<Passenger>> GetAllAsync()
+            => await Task.FromResult(_passengers);
 
-        public void Add(Passenger passenger)
+        public async Task AddAsync(Passenger passenger)
         {
             _passengers.Add(passenger);
+            await Task.CompletedTask;
         }
 
-        public void Remove(Guid passengerId)
+        public async Task RemoveAsync(Guid passengerId)
         {
-            var passenger = Get(passengerId);
+            var passenger = await GetAsync(passengerId);
             _passengers.Remove(passenger);
+            await Task.CompletedTask;
         }
 
-        public void Update(Passenger passenger)
+        public async Task UpdateAsync(Passenger passenger)
         {
+            await Task.CompletedTask;
         }
     }
 }

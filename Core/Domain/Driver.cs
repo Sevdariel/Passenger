@@ -15,7 +15,7 @@ namespace Core.Domain
         {
         }
 
-        public Driver(Guid id, Guid userid)
+        public Driver(Guid userid)
         {
             UserId = userid;
         }
