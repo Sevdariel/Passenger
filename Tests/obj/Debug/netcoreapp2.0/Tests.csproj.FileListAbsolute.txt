@@ -7,3 +7,14 @@ C:\Users\Właściciel\source\repos\Passenger\Tests\obj\Debug\netcoreapp2.0\Tests
 C:\Users\Właściciel\source\repos\Passenger\Tests\obj\Debug\netcoreapp2.0\Tests.AssemblyInfo.cs
 C:\Users\Właściciel\source\repos\Passenger\Tests\obj\Debug\netcoreapp2.0\Tests.dll
 C:\Users\Właściciel\source\repos\Passenger\Tests\obj\Debug\netcoreapp2.0\Tests.pdb
+C:\Users\Właściciel\source\repos\Passenger\Tests\bin\Debug\netcoreapp2.0\Tests.runtimeconfig.json
+C:\Users\Właściciel\source\repos\Passenger\Tests\bin\Debug\netcoreapp2.0\Tests.runtimeconfig.dev.json
+C:\Users\Właściciel\source\repos\Passenger\Tests\bin\Debug\netcoreapp2.0\NUnit3.TestAdapter.dll
+C:\Users\Właściciel\source\repos\Passenger\Tests\bin\Debug\netcoreapp2.0\NUnit3.TestAdapter.pdb
+C:\Users\Właściciel\source\repos\Passenger\Tests\bin\Debug\netcoreapp2.0\nunit.engine.netstandard.dll
+C:\Users\Właściciel\source\repos\Passenger\Tests\bin\Debug\netcoreapp2.0\Mono.Cecil.dll
+C:\Users\Właściciel\source\repos\Passenger\Tests\bin\Debug\netcoreapp2.0\Core.dll
+C:\Users\Właściciel\source\repos\Passenger\Tests\bin\Debug\netcoreapp2.0\Infrastructure.dll
+C:\Users\Właściciel\source\repos\Passenger\Tests\bin\Debug\netcoreapp2.0\Infrastructure.pdb
+C:\Users\Właściciel\source\repos\Passenger\Tests\bin\Debug\netcoreapp2.0\Core.pdb
+C:\Users\Właściciel\source\repos\Passenger\Tests\obj\Debug\netcoreapp2.0\Tests.csproj.CopyComplete

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "e6bc48a02a5cbc5b3b7cf393a3c6fbde08e659ea"
+    "signature": "90c5f334b9f9ba5a4f6293c3fdfd2100bdb1212a"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,7 +9,8 @@
       "Infrastructure/1.0.0": {
         "dependencies": {
           "AutoMapper": "7.0.1",
-          "Core": "1.0.0"
+          "Core": "1.0.0",
+          "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
           "Infrastructure.dll": {}
@@ -23,6 +24,14 @@
           "lib/netcoreapp2.0/AutoMapper.dll": {
             "assemblyVersion": "7.0.1.0",
             "fileVersion": "7.0.1.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.2.21924"
           }
         }
       },
@@ -49,6 +58,13 @@
       "sha512": "sha512-6xHbhsW09sWjjYuE1sqhYn25PQzB6UEUVPME5uhlaIz2NR2+L3+FGbVxvknJKug1BLp6VTLxDb5RcGXKMm0ieQ==",
       "path": "automapper/7.0.1",
       "hashPath": "automapper.7.0.1.nupkg.sha512"
+    },
+    "Newtonsoft.Json/11.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "path": "newtonsoft.json/11.0.2",
+      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
     },
     "System.ValueTuple/4.5.0": {
       "type": "package",

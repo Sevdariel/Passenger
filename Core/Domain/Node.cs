@@ -34,7 +34,7 @@ namespace Core.Domain
 
         public void SetLongitude(double longitude)
         {
-            if (longitude >= 360 || longitude < 0)
+            if (longitude < -180 || longitude > 180)
                 throw new Exception("Longitude is invalid");
 
             Longitude = longitude;
@@ -43,7 +43,7 @@ namespace Core.Domain
 
         public void SetLatitude(double latitude)
         {
-            if (latitude > 90 || latitude < 0)
+            if (latitude > 90 || latitude < -90)
                 throw new Exception("Latitude is invalid");
 
             Latitude = latitude;

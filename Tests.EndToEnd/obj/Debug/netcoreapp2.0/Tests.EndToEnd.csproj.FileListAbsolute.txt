@@ -7,3 +7,16 @@ C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\obj\Debug\netcoreapp
 C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\obj\Debug\netcoreapp2.0\Tests.EndToEnd.AssemblyInfo.cs
 C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\obj\Debug\netcoreapp2.0\Tests.EndToEnd.dll
 C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\obj\Debug\netcoreapp2.0\Tests.EndToEnd.pdb
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\bin\Debug\netcoreapp2.0\Tests.EndToEnd.runtimeconfig.json
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\bin\Debug\netcoreapp2.0\Tests.EndToEnd.runtimeconfig.dev.json
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\bin\Debug\netcoreapp2.0\NUnit3.TestAdapter.dll
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\bin\Debug\netcoreapp2.0\NUnit3.TestAdapter.pdb
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\bin\Debug\netcoreapp2.0\nunit.engine.netstandard.dll
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\bin\Debug\netcoreapp2.0\Mono.Cecil.dll
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\bin\Debug\netcoreapp2.0\Core.dll
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\bin\Debug\netcoreapp2.0\Infrastructure.dll
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\bin\Debug\netcoreapp2.0\Infrastructure.pdb
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\bin\Debug\netcoreapp2.0\Core.pdb
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\obj\Debug\netcoreapp2.0\Tests.EndToEnd.csproj.CopyComplete
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\bin\Debug\netcoreapp2.0\Api.dll
+C:\Users\Właściciel\source\repos\Passenger\Tests.EndToEnd\bin\Debug\netcoreapp2.0\Api.pdb
