@@ -15,18 +15,8 @@ using NUnit.Framework;
 
 namespace Tests.EndToEnd.Controllers
 {
-    public class UsersControllerTests
+    public class UsersControllerTests : ControllerTestsBase
     {
-        private readonly TestServer _server;
-        private readonly HttpClient _client;
-
-        public UsersControllerTests()
-        {
-            _server = new TestServer(new WebHostBuilder()
-                .UseStartup<Startup>());
-            _client = _server.CreateClient();
-        }
-
         [Test]
         public async Task GivenValidEmailUserShouldExist()
         {
@@ -40,7 +30,7 @@ namespace Tests.EndToEnd.Controllers
         public async Task GivenValidEmailUserShouldNotExist()
         {
             var email = "user1000@email.com";
-            var response = await _client.GetAsync($"users/{email}");
+            var response = await Client.GetAsync($"users/{email}");
 
             Assert.AreEqual(HttpStatusCode.NotFound, response.StatusCode);
         }
@@ -55,7 +45,7 @@ namespace Tests.EndToEnd.Controllers
                 Password = "secret"
             };
             var payload = GetPayload(request);
-            var response = await _client.PostAsync("users", payload);
+            var response = await Client.PostAsync("users", payload);
 
             Assert.AreEqual(HttpStatusCode.Created, response.StatusCode);
             Assert.AreEqual(response.Headers.Location.ToString(), $"users/{request.Email}");
@@ -66,7 +56,7 @@ namespace Tests.EndToEnd.Controllers
 
         private async Task<UserDTO> GetUserAsync(string email)
         {
-            var response = await _client.GetAsync($"users/{email}");
+            var response = await Client.GetAsync($"users/{email}");
             var responseString = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<UserDTO>(responseString);
         }

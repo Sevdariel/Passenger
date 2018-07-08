@@ -10,16 +10,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
-    [Route("[controller]")]
-    public class UsersController : Controller
+    public class UsersController : ApiControllerBase
     {
         private readonly IUserService _userService;
         private readonly ICommandDispatcher _commandDispatcher;
 
-        public UsersController(IUserService userService, ICommandDispatcher commandDispatcher)
+        public UsersController(IUserService userService, 
+            ICommandDispatcher commandDispatcher) : base(commandDispatcher)
         {
             _userService = userService;
-            _commandDispatcher = commandDispatcher;
         }
 
         [HttpGet("{email}")]
@@ -40,5 +39,6 @@ namespace Api.Controllers
 
             return Created($"users/{command.Email}", new object());
         }
+
     }
 }
