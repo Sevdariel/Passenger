@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using Core.Domain;
 using Core.Repostitories;
 
@@ -16,28 +17,31 @@ namespace Infrastructure.Repositories
             new User("user3@email.com", "secret", "salt", "user3")
         };
 
-        public User Get(Guid id) 
-            => _users.SingleOrDefault(x => x.Id == id);
+        public async Task<User> GetAsync(Guid id) 
+            => await Task.FromResult(_users.SingleOrDefault(x => x.Id == id));
 
-        public User Get(string email)
-            => _users.SingleOrDefault(x => x.Email == email.ToLowerInvariant());
+        public async Task<User> GetAsync(string email)
+            => await Task.FromResult(_users.SingleOrDefault(x => x.Email == email.ToLowerInvariant()));
 
-        public void Add(User user)
+        public async Task AddAsync(User user)
         {
             _users.Add(user);
+            await Task.CompletedTask;
         }
 
-        public void Remove(Guid id)
+        public async Task RemoveAsync(Guid id)
         {
-            var user = Get(id);
+            var user = await GetAsync(id);
             _users.Remove(user);
+            await Task.CompletedTask;
         }
 
-        public void Update(User user)
+        public async Task UpdateAsync(User user)
         {
+            await Task.CompletedTask;
         }
 
-        public IEnumerable<User> GetAll()
-            => _users;
+        public async Task<IEnumerable<User>> GetAllAsync()
+            => await Task.FromResult(_users);
     }
 }

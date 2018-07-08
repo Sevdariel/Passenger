@@ -20,13 +20,11 @@ namespace Api.Controllers
         }
 
         [HttpGet("{email}")]
-        public UserDTO Get(string email)
-            => _userService.Get(email);
+        public async Task<UserDTO> Get(string email)
+            => await _userService.GetAsync(email);
 
         [HttpPost]
-        public void Post([FromBody]CreateUser request)
-        {
-            _userService.Register(request.Email, request.Username, request.Password);
-        }
+        public async Task Post([FromBody]CreateUser request)
+            => await _userService.RegisterAsync(request.Email, request.Username, request.Password);
     }
 }
