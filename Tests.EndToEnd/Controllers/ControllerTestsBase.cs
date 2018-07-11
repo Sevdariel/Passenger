@@ -12,8 +12,8 @@ namespace Tests.EndToEnd.Controllers
 
         public ControllerTestsBase()
         {
-             Server = new TestServer(new WebHostBuilder()
-                 .UseStartup<Startup>());
+            Server = new TestServer(new WebHostBuilder()
+                .UseStartup<Startup>());
             Client = Server.CreateClient();
         }
     }

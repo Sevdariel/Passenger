@@ -24,6 +24,7 @@ namespace Tests.EndToEnd.Controllers
 
             var payload = GetPayload(command);
             var response = await Client.PutAsync("account/password", payload);
+            
             Assert.AreEqual(HttpStatusCode.NoContent, response.StatusCode);
         }
 
