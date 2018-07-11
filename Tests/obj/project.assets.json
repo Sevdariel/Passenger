@@ -2082,6 +2082,8 @@
           "Autofac": "4.8.1",
           "Autofac.Extensions.DependencyInjection": "4.2.2",
           "Core": "1.0.0",
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.Binder": "2.1.1",
           "Newtonsoft.Json": "11.0.2"
         },
         "compile": {
@@ -6703,6 +6705,8 @@
       "Autofac.Extensions.DependencyInjection >= 4.2.2",
       "Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.TestHost >= 2.1.1",
+      "Microsoft.Extensions.Configuration >= 2.1.1",
+      "Microsoft.Extensions.Configuration.Binder >= 2.1.1",
       "Microsoft.NET.Test.Sdk >= 15.7.2",
       "Microsoft.NETCore.App >= 2.0.0",
       "Moq >= 4.8.3",
@@ -6768,6 +6772,14 @@
             "version": "[4.2.2, )"
           },
           "Microsoft.AspNetCore.TestHost": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
+          "Microsoft.Extensions.Configuration": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
+          "Microsoft.Extensions.Configuration.Binder": {
             "target": "Package",
             "version": "[2.1.1, )"
           },
