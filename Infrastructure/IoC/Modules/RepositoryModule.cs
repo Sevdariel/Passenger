@@ -1,7 +1,6 @@
 using System.Reflection;
 using Autofac;
-using Core.Repostitories;
-
+using Core;
 
 namespace Infrastructure.IoC.Modules
 {
