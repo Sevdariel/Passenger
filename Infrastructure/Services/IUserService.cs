@@ -9,6 +9,6 @@ namespace Infrastructure.Services
     public interface IUserService
     {
         Task<UserDTO> GetAsync(string email);
-        Task RegisterAsync(string email, string userName, string password);
+        Task RegisterAsync(string email, string userName, string password, string role);
     }
 }

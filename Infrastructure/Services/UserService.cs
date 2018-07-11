@@ -27,7 +27,7 @@ namespace Infrastructure.Services
             return _mapper.Map<User, UserDTO>(user);
         }
 
-        public async Task RegisterAsync(string email, string userName, string password)
+        public async Task RegisterAsync(string email, string userName, string password, string role)
         {
             var user = await _userRepository.GetAsync(email);
 
@@ -35,7 +35,7 @@ namespace Infrastructure.Services
                 throw new Exception($"User with email: '{email}' already exists.");
 
             var salt = Guid.NewGuid().ToString("N");
-            user = new User(email, password, salt, userName);
+            user = new User(email, password, salt, userName, role);
             await _userRepository.AddAsync(user);
         }
     }

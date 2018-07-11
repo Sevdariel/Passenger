@@ -678,7 +678,7 @@
       ]
     },
     "Microsoft.NETCore.Targets/1.1.0": {
-      "sha512": "jcQguU0FIUC2saCD/3rJGCR33hQQe7qye/uxXHr926pbP541Z34Ba3q3OiUmzfwaxcaXGEHnlM8YYxwtl4HmZg==",
+      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "type": "package",
       "path": "microsoft.netcore.targets/1.1.0",
       "files": [
@@ -819,7 +819,7 @@
       ]
     },
     "System.ComponentModel/4.3.0": {
-      "sha512": "1lMQ/rU2OZTLMvp20rZPmAgKLYaw9cRvf4tALvXW6eUcA1Uds3PHMynXv3SZKmZk/LbKl1aFmEkO+6jI4eu11g==",
+      "sha512": "VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
       "type": "package",
       "path": "system.componentmodel/4.3.0",
       "files": [
@@ -876,7 +876,7 @@
       ]
     },
     "System.Runtime/4.3.0": {
-      "sha512": "ndwixq3yJdVOFUZwYXY7Mm9bB6ttkXLPOIuXzoKJ0Z88XReWUCmWVcSgQa7/cBF5jNG+YxxFagzvi2Q8LiyaqQ==",
+      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
       "type": "package",
       "path": "system.runtime/4.3.0",
       "files": [
@@ -1018,31 +1018,29 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Właściciel\\.nuget\\packages\\": {},
+    "C:\\Users\\mzalewski\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Właściciel\\source\\repos\\Passenger\\Core\\Core.csproj",
+      "projectUniqueName": "c:\\Projekty\\Passenger\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\Właściciel\\source\\repos\\Passenger\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\Właściciel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Właściciel\\source\\repos\\Passenger\\Core\\obj\\",
+      "projectPath": "c:\\Projekty\\Passenger\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\mzalewski\\.nuget\\packages\\",
+      "outputPath": "c:\\Projekty\\Passenger\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Właściciel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\mzalewski\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "netcoreapp2.0": {

@@ -13,6 +13,7 @@ namespace Core.Domain
         public string Username { get; protected set; }
         public string Password { get; protected set; }
         public string FullName { get; protected set; }
+        public string Role {get; protected set;}
         public string Salt { get; protected set; }
         public DateTime CreatedAt { get; protected set; }
         public DateTime UpdatedAt { get; protected set; }
@@ -21,12 +22,13 @@ namespace Core.Domain
         {
         }
 
-        public User(string email, string password, string salt, string username)
+        public User(string email, string password, string salt, string username, string role)
         {
             Id = Guid.NewGuid();
             SetEmail(email);
             SetPassword(password);
             Salt = salt;
+            Role = role;
             SetUsername(username);
             CreatedAt = DateTime.UtcNow;
         }
@@ -65,6 +67,12 @@ namespace Core.Domain
                 throw new Exception("Username cant be shorter than 3");
 
             Username = username.ToLowerInvariant();
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void SetRole(string role)
+        {
+            Role = role;
             UpdatedAt = DateTime.UtcNow;
         }
     }
