@@ -6,7 +6,7 @@ using Core.Domain;
 
 namespace Core.Repostitories
 {
-    public interface IDriverRepository
+    public interface IDriverRepository : IRepository
     {
         Task<Driver> GetAsync(Guid userId);
         Task<IEnumerable<Driver>> GetAllAsync();

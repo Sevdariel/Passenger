@@ -6,7 +6,7 @@ using Infrastructure.DTO;
 
 namespace Infrastructure.Services
 {
-    public interface IPassengerService
+    public interface IPassengerService : IService
     {
         Task<PassengerDTO> GetAsync(Guid passengerId);
     }

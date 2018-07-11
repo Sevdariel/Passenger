@@ -28,13 +28,12 @@ namespace Api
         {
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, InMemoryUserRepository>();
-            services.AddSingleton(AutoMapperConfig.Initialize());
+            
             services.AddMvc();
 
             var builder = new ContainerBuilder();
             builder.Populate(services);
-            builder.RegisterModule<CommandModule>();
-            builder.RegisterModule(new SettingsModule(Configuration));
+            builder.RegisterModule(new ContainerModule(Configuration));
             ApplicationContainer = builder.Build();
 
             return new AutofacServiceProvider(ApplicationContainer);

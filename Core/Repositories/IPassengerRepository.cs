@@ -6,7 +6,7 @@ using Core.Domain;
 
 namespace Core.Repostitories
 {
-    public interface IPassengerRepository
+    public interface IPassengerRepository : IRepository
     {
         Task<Passenger> GetAsync(Guid passengerId);
         Task<IEnumerable<Passenger>> GetAllAsync();

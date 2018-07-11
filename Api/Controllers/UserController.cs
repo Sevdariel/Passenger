@@ -6,6 +6,7 @@ using Infrastructure.Commands;
 using Infrastructure.Commands.Users;
 using Infrastructure.DTO;
 using Infrastructure.Services;
+using Infrastructure.Settings;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
@@ -13,10 +14,9 @@ namespace Api.Controllers
     public class UsersController : ApiControllerBase
     {
         private readonly IUserService _userService;
-        private readonly ICommandDispatcher _commandDispatcher;
 
         public UsersController(IUserService userService, 
-            ICommandDispatcher commandDispatcher) : base(commandDispatcher)
+            ICommandDispatcher commandDispatcher, GeneralSettings settings) : base(commandDispatcher)
         {
             _userService = userService;
         }
@@ -35,7 +35,7 @@ namespace Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] CreateUser command)
         {
-            await _commandDispatcher.DispatchAsync(command);
+            await CommandDispatcher.DispatchAsync(command);
 
             return Created($"users/{command.Email}", new object());
         }

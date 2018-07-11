@@ -13,6 +13,8 @@
           "Autofac.Extensions.DependencyInjection": "4.2.2",
           "Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.TestHost": "2.1.1",
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.Binder": "2.1.1",
           "Microsoft.NET.Test.Sdk": "15.7.2",
           "Moq": "4.8.3",
           "NUnit": "3.10.1",
@@ -1462,6 +1464,8 @@
           "Autofac": "4.8.1",
           "Autofac.Extensions.DependencyInjection": "4.2.2",
           "Core": "1.0.0",
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.Binder": "2.1.1",
           "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {

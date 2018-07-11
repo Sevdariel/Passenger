@@ -6,7 +6,7 @@ using Core.Domain;
 
 namespace Core.Repostitories
 {
-    public interface IUserRepository
+    public interface IUserRepository : IRepository
     {
         Task<User> GetAsync(Guid id);
         Task<User> GetAsync(string email);
